@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(HomeWork-2_11_3)
+add_library(leaverLib SHARED Leaver.cpp)
+add_executable(leave main.cpp)
+target_link_libraries(leave leaverLib)
